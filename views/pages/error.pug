@@ -1,0 +1,11 @@
+extends ../layout-login
+
+block content
+  .container
+    .wrapper.headings
+      h1 Unauthorized 
+      h3 Incorrect username or password
+      br
+      button.btn.btn-lg.btn-info.btn-block.tryagain(name='Submit', value='Login', type='Submit', onclick="window.location.href='/login'") Try again
+      br
+      a.register(name='Submit', value='Login', type='Submit' href='register') Register

@@ -1,0 +1,16 @@
+extends ../layout
+
+block content
+  .container
+    h1.completed Completed
+    br
+    if taskscompleted.length === 1
+      h4.notasks No tasks completed.
+    else 
+      ol.completed-ol
+        each completedTask, i in taskscompleted
+          if completedTask.done === true && completedTask.id
+            li.completed-tasks 
+              span #{completedTask.name}
+              br   
+              span.hidden-xs (#{completedTask.dateCompleted})

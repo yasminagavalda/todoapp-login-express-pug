@@ -1,0 +1,30 @@
+extends ../layout
+
+block content
+  .container
+    .welcome-home
+      h1 Welcome #{username}!
+      br
+      br
+      button.doneAll.btn.btn-success All done
+      form.addtasks(action="home", method="POST")
+        .input-group
+          input.btn.input-tasks(name="task" placeholder="Add a new task" autofocus)
+          button.btn.btn-info.btn-tasks Add task
+      br
+      br
+      if tasks.length === 0
+        h4.notasks No tasks....
+      ul.todoTasks
+        each task, i in tasks
+          li.task-item
+            button.done.btn.btn-success(data-id=task.id) Done
+            span.name= i+1 + '. '
+            input.name(value=task.name)
+            button.remove.btn.btn-danger(data-id=task.id) Delete task
+            br
+            span.time.hidden-xs= task.dateCreated
+      
+            
+
+

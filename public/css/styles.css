@@ -1,0 +1,155 @@
+body {
+	background-color: #2B3238;
+}
+
+/*LOGIN, REGISTER & UNAUTHORIZED*/
+
+.headings {
+	margin-top: 150px;
+	text-align: center;
+	color: #f7f7f7;
+}
+
+.form-signin{
+	text-align: center;
+	width: 320px;
+    margin: 0 auto;
+}
+
+.register {
+	text-align: center;
+	color: white;
+}
+
+.register:hover {
+	text-align: center;
+	color: white;
+	text-decoration: underline;
+}
+
+.tryagain {
+	width: 320px;
+    margin: 0 auto;
+  	align-items: center;
+}
+
+/*HEADER*/
+
+nav {
+	margin-top: 15px;
+}
+
+.nav-tasks > a {
+	color: #717578;
+	font-size: 20px;
+}
+
+.nav-pills>li.active>a {
+	background-color: #2B3238;
+}
+
+.nav-pills>li.nav-tasks>a:hover {
+	background-color: #3F4448;
+}
+
+.nav-pills>li.logout>a {
+	background-color: #2B3238;
+	color: #717578;
+	font-size: 20px;
+}
+
+.nav-pills>li.logout>a:hover {
+	background-color: #3F4448;
+}
+
+/*HOME*/
+
+.welcome-home {
+	color: #f7f7f7;
+	text-align: center;
+}
+
+.notasks {
+	text-align: left;
+	margin-left: 10%;
+	color: #f7f7f7;
+}
+
+.doneAll {
+	float: left;
+	margin-left: 10%;
+}
+
+.addtasks {
+	display: flex;
+    margin-left: 35%;
+}
+
+.input-tasks {
+	border-bottom-right-radius: 0;
+	border-top-right-radius: 0;
+}
+
+.btn-tasks {
+	border-bottom-left-radius: 0;
+	border-top-left-radius: 0;
+}
+
+.todoTasks {
+	list-style: none;
+}
+
+.task-item {
+	margin-bottom: 20px;
+}
+
+.done {
+	float: left;
+	margin-left: 7%;
+
+}
+
+.remove {
+	float: right;
+	margin-right: 10%;
+}
+
+.name {
+	outline-width: 0;
+	background-color: #2B3238;
+	border-radius: 3px;
+	border: 0;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.name:focus {
+	outline-width: 0;
+	border-radius: 3px;
+	border: 0;
+	background-color: #3F4448;
+	text-indent: 10px;
+}
+
+.time {
+	font-size: small;
+	color: #c6c6c6;
+}
+
+	
+/*COMPLETED*/
+
+.completed {
+	color: #f7f7f7;
+	text-align: center;
+}
+
+.completed-ol {
+	color: #f7f7f7;
+	margin-left: 20%;
+}
+
+.completed-tasks {
+	margin-top: 10px;
+	font-size: 20px;
+}
