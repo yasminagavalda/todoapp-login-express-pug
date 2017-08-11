@@ -11,6 +11,6 @@ block content
         each completedTask, i in taskscompleted
           if completedTask.done === true && completedTask.id
             li.completed-tasks 
-              span #{completedTask.name}
+              span.task-completed #{completedTask.name}
               br   
-              span.hidden-xs (#{completedTask.dateCompleted})
+              span.time.hidden-xs (#{completedTask.dateCompleted})

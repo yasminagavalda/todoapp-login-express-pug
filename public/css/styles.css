@@ -134,6 +134,7 @@ nav {
 .time {
 	font-size: small;
 	color: #c6c6c6;
+	font-weight: normal;
 }
 
 	
@@ -152,4 +153,5 @@ nav {
 .completed-tasks {
 	margin-top: 10px;
 	font-size: 20px;
+	font-weight: bold;
 }

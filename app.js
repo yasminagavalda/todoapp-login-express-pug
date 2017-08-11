@@ -123,7 +123,6 @@ app.get('/completed', (req,res) => {
   todoTasks.forEach(function(item){
     if (item.done === true) {
       taskscompleted.push(item)
-      console.log('completed')
     }
   })
   res.render('pages/completed', { taskscompleted })
