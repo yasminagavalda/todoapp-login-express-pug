@@ -52,7 +52,7 @@ app.post('/login', (req, res) => {
   username = req.body.username
   let password = req.body.password
   let loginOk = 0
-  const users = fs.readFileSync('users.txt', 'utf-8').split('\r\n')
+  const users = fs.readFileSync('data/users.txt', 'utf-8').split('\r\n')
   users.forEach(function (item) {
     let user = item.split(':')
     if (username === user[0] && password === user[1]) {
