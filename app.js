@@ -38,13 +38,10 @@ app.use((req, res, next) => {
     const pathTasks = path.join(process.cwd(), `data/tasks/${username}.json`)
     if (fs.existsSync(pathTasks)) {
       process.tasks = require(pathTasks)
+    } else {
+      process.tasks = []
     }
   }
-  next()
-})
-
-app.use( (req, res, next) => {
-  process.tasks = process.tasks || []
   next()
 })
 
