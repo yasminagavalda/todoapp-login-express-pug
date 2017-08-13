@@ -6,7 +6,7 @@ $('.remove').on('click', function(e) {
   var id = $(this).attr('data-id')
 
   $.ajax({
-    url: '/task/' + id,
+    url: '/home/' + id,
     method: 'DELETE'
   })
   .then( data => {
@@ -20,7 +20,7 @@ $('.done').on('click', function(e) {
   var id = $(this).attr('data-id')
 
   $.ajax({
-    url: '/completed/' + id,
+    url: '/home/' + id,
     method: 'PUT'
   })
   .then( data => {
@@ -66,7 +66,7 @@ $('.name').on( 'keydown', function(event) {
       var id = $(this).siblings('.done').attr('data-id')
 
       $.ajax({
-        url: '/edited/' + id + '/' + taskname,
+        url: '/home/' + id + '/' + taskname,
         method: 'PUT'
       })
       .then( data => {

@@ -1,5 +1,6 @@
 body {
 	background-color: #2B3238;
+	min-width: 715px;
 }
 
 /*LOGIN, REGISTER & UNAUTHORIZED*/
